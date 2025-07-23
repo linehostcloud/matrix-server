@@ -51,17 +51,6 @@ services:
         networks:
             - matrix-net
 
-    # Element Web Client (opcional)
-    element:
-        image: vectorim/element-web:latest
-        container_name: matrix-element
-        restart: unless-stopped
-        volumes:
-            - ./element-config.json:/app/config.json:ro
-        ports:
-            - "8080:80"
-        networks:
-            - matrix-net
 
 volumes:
     synapse_data:

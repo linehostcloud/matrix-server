@@ -1,7 +1,6 @@
 # Configuration file for Synapse.
 server_name: "matrix.linehost.pro"
 pid_file: /data/homeserver.pid
-web_client_location: https://matrix.linehost.pro/element/
 
 # Listeners
 listeners:
